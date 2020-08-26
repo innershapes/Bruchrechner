@@ -13,14 +13,6 @@ namespace Bruchrechner
 {
     public partial class MainClass
     {
-        // Create new line
-        static void NewLine(int numLines)
-        {
-            for (int i = 0; i < numLines; i++)
-            {
-                Console.WriteLine();
-            }
-        }
 
         // Output the welcome massage and information about the programm
         static void Splash()
@@ -28,12 +20,17 @@ namespace Bruchrechner
             string astrerisk = "-";
 
             Console.WriteLine(String.Concat(Enumerable.Repeat(astrerisk, 79)));
-            Console.SetCursorPosition(34, 2);
-            Console.WriteLine("WELCOME");
+            Console.SetCursorPosition(34, 1);
+            AddText("WILLCOMMEN");
             Console.WriteLine(String.Concat(Enumerable.Repeat(astrerisk, 79)));
             NewLine(2);
-            Console.SetCursorPosition(34, 2);
-
+            AddText("   Programm Name:     Bruchrechner");
+            AddText("Programm Version:     V1.0");
+            AddText("         Autorin:     Apostolka Christov");
+            AddText("    Erstelldatum:     26.08.2020");
+            AddText("       Anwendung:     Zum Rechnen mit Brueche");
+            NewLine(2);
+            Console.WriteLine(String.Concat(Enumerable.Repeat(astrerisk, 79)));
         }
     }
 }

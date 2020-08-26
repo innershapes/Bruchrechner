@@ -14,9 +14,7 @@ namespace Bruchrechner
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bruchrechner");
-            Splash();
-
+            Run();
             Console.ReadKey();
         }
     }

@@ -12,6 +12,9 @@ namespace Bruchrechner
 {
     partial class MainClass
     {
-
+        static void Run()
+        {
+            Splash();
+        }
     }
 }

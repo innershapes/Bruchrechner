@@ -21,5 +21,11 @@ namespace Bruchrechner
                 Console.WriteLine();
             }
         }
+
+        // Add text. The methode takes a string argument
+        static void AddText(string text)
+        {
+            Console.WriteLine(text);
+        }
     }
 }
