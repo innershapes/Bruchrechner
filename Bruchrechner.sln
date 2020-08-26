@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bruchrechner", "Bruchrechner\Bruchrechner.csproj", "{79A65C88-C8E0-4550-B77A-013F479EB6CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79A65C88-C8E0-4550-B77A-013F479EB6CA}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{79A65C88-C8E0-4550-B77A-013F479EB6CA}.Debug|anycpu.Build.0 = Debug|anycpu
+		{79A65C88-C8E0-4550-B77A-013F479EB6CA}.Release|anycpu.ActiveCfg = Release|anycpu
+		{79A65C88-C8E0-4550-B77A-013F479EB6CA}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal
