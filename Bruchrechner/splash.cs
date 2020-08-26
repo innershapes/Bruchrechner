@@ -4,33 +4,34 @@ Authorin:		Apostolka Christov
 Klasse:			IA219
 Datum:			24.08.2020
 Datei:          splash.cs
+Beschreibung:   Im Module befindet sich die Methode zum Anzeigen der
+                Programm-relevanten Informationen.
 *****************************************************************************/
 
 using System;
-using System.Linq;
+
 
 namespace Bruchrechner
 {
     public partial class MainClass
     {
 
-        // Output the welcome massage and information about the programm
+        // Outputs the welcome massage and information about the programm
         static void Splash()
         {
-            string astrerisk = "-";
-
-            Console.WriteLine(String.Concat(Enumerable.Repeat(astrerisk, 79)));
+            SetPageBorder("-");
             Console.SetCursorPosition(34, 1);
-            AddText("WILLCOMMEN");
-            Console.WriteLine(String.Concat(Enumerable.Repeat(astrerisk, 79)));
-            NewLine(2);
-            AddText("   Programm Name:     Bruchrechner");
-            AddText("Programm Version:     V1.0");
-            AddText("         Autorin:     Apostolka Christov");
-            AddText("    Erstelldatum:     26.08.2020");
-            AddText("       Anwendung:     Zum Rechnen mit Brueche");
-            NewLine(2);
-            Console.WriteLine(String.Concat(Enumerable.Repeat(astrerisk, 79)));
+            WriteText("WILLKOMMEN");
+            SetPageBorder("-");
+            AddNewLine(2);
+            WriteText("   Programm Name:     Bruchrechner");
+            WriteText("Programm Version:     V1.0");
+            WriteText("         Autorin:     Apostolka Christov");
+            WriteText("    Erstelldatum:     26.08.2020");
+            WriteText("       Anwendung:     Zum Rechnen mit Brueche");
+            AddNewLine(2);
+            SetPageBorder("-");
+            AddNewLine(2);
         }
     }
 }

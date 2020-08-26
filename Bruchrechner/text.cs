@@ -8,13 +8,14 @@ Beschreibung:   Im Module befinden sich Funktionen zum Umgang mit Text
 *****************************************************************************/
 
 using System;
+using System.Linq;
 
 namespace Bruchrechner
 {
     partial class MainClass
     {
-        // Create new line
-        static void NewLine(int numLines)
+        // Creates new line
+        static void AddNewLine(int numLines)
         {
             for (int i = 0; i < numLines; i++)
             {
@@ -22,10 +23,16 @@ namespace Bruchrechner
             }
         }
 
-        // Add text. The methode takes a string argument
-        static void AddText(string text)
+        // Adds text. The methode takes a string argument
+        static void WriteText(string text)
         {
             Console.WriteLine(text);
         }
-    }
+
+        // Set horizontal page border. It take an argument with the prefered sign
+        static void SetPageBorder(string sign)
+        {
+            Console.WriteLine(String.Concat(Enumerable.Repeat(sign, 79)));
+        }
+    }   
 }
