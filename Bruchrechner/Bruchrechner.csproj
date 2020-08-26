@@ -26,10 +26,6 @@
     <WarningLevel>4</WarningLevel>
     <ExternalConsole>true</ExternalConsole>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
-    <StartAction>Project</StartAction>
-    <ExternalConsole>false</ExternalConsole>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
@@ -45,6 +41,7 @@
     <Compile Include="Exception.cs" />
     <Compile Include="run.cs" />
     <Compile Include="Kuerzen.cs" />
+    <Compile Include="text.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

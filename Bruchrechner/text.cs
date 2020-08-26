@@ -4,6 +4,7 @@ Authorin:		Apostolka Christov
 Klasse:			IA219
 Datum:			24.08.2020
 Datei:          Main.cs
+Beschreibung:   Im Module befinden sich Funktionen zum Umgang mit Text
 *****************************************************************************/
 
 using System;
@@ -12,12 +13,13 @@ namespace Bruchrechner
 {
     partial class MainClass
     {
-        static void Main(string[] args)
+        // Create new line
+        static void NewLine(int numLines)
         {
-            Console.WriteLine("Bruchrechner");
-            Splash();
-
-            Console.ReadKey();
+            for (int i = 0; i < numLines; i++)
+            {
+                Console.WriteLine();
+            }
         }
     }
 }
