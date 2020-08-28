@@ -15,7 +15,7 @@ namespace Bruchrechner
         static void Run()
         {
             Splash();
-            Menue();
+            Hauptmenue();
         }
     }
 }

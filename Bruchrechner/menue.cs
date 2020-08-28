@@ -5,7 +5,7 @@ Klasse:			IA219
 Datum:			24.08.2020
 Datei:          menue.cs
 Beschreibung:   Im Module finden Sie die Methode
-                zum Anzeigen der Bedienungsanleitung
+                zum Anzeigen der Haupmenue
 *****************************************************************************/
 
 using System;
@@ -14,20 +14,26 @@ namespace Bruchrechner
 {
     partial class MainClass
     {
-        static void Menue()
+        // Zeigt die verfügbaren Funktionen zum Berechnung eines Bruchs und die Tastatur-Tasten zum Auswahl die Funktionen.
+        // Erfasst den User-Input und gibt es aus zu weiterer Bearbeitung in der run-Methode.
+        static string Hauptmenue()
+        //TODO: Capture the user-input and pass it on in the run method
         {
             Console.SetCursorPosition(34, 11);
             WriteText("Hauptmenue");
             AddNewLine(1);
-            WriteText("        Zum Kalkulieren der gewuenschten Brueche druecke die folgenden Taste:");
+            WriteText("        Zum Kalkulieren eines Bruchs waehle von der folgenden Funktionen aus:");
             AddNewLine(1);
-            WriteText("                        Zum Addieren [+]:     (A)");
-            WriteText("                   Zum Substrahieren [-]:     (S)");
-            WriteText("                  Zum Multiplizieren [*]:     (M)");
-            WriteText("                      Zum Dividieren [/]:     (D)");
+            WriteText("                        Zum Addieren [+] drucke Taste (a)");
+            WriteText("                   Zum Substrahieren [-] drucke Taste (s)");
+            WriteText("                  Zum Multiplizieren [*] drucke Taste (m)");
+            WriteText("                      Zum Dividieren [/] drucke Taste (d)");
             AddNewLine(1);
-            WriteText("                    Zum Programm Beenden:     (B)");
+            WriteText("               Zum Beenden des Programms drucke Taste (b)");
+            AddNewLine(1);
 
+            string auswahl = Console.ReadLine();
+            return auswahl;
         }
     }
 }
