@@ -6,15 +6,17 @@ Datum:			24.08.2020
 Datei:          Addieren.cs
 *****************************************************************************/
 
-using System;
-
 namespace Bruchrechner
 {
     partial class MainClass
     {
-        //static Bruch Addieren(Bruch)
-        //{
+        static Bruch Addieren(Bruch erstes, Bruch zeites)
+        {
+            Bruch ergebnis = new Bruch();
 
-        //}
+
+
+            return ergebnis;
+        }
     }
 }

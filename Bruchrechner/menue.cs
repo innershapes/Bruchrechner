@@ -17,7 +17,7 @@ namespace Bruchrechner
         // Zeigt die verfügbaren Funktionen zum Berechnung eines Bruchs und die Tastatur-Tasten zum Auswahl die Funktionen.
         // Erfasst den User-Input und gibt es aus zu weiterer Bearbeitung in der run-Methode.
         static string Hauptmenue()
-        //TODO: Capture the user-input and pass it on in the run method
+        //TODO: Find out how to capture user-input that is a single character 
         {
             Console.SetCursorPosition(34, 11);
             WriteText("Hauptmenue");
@@ -33,6 +33,7 @@ namespace Bruchrechner
             AddNewLine(1);
 
             string auswahl = Console.ReadLine();
+            Console.Clear();
             return auswahl;
         }
     }

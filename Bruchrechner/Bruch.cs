@@ -13,5 +13,11 @@ namespace Bruchrechner
 {
     partial class MainClass
     {
+        // Das Stukt des Beuchs
+        public struct Bruch
+        {
+            int zaehler;
+            int nenner;
+        }
     }
 }
