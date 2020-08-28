@@ -16,6 +16,17 @@ namespace Bruchrechner
     {
         static void Menue()
         {
+            Console.SetCursorPosition(34, 11);
+            WriteText("Hauptmenue");
+            AddNewLine(1);
+            WriteText("        Zum Kalkulieren der gewuenschten Brueche druecke die folgenden Taste:");
+            AddNewLine(1);
+            WriteText("                        Zum Addieren [+]:     (A)");
+            WriteText("                   Zum Substrahieren [-]:     (S)");
+            WriteText("                  Zum Multiplizieren [*]:     (M)");
+            WriteText("                      Zum Dividieren [/]:     (D)");
+            AddNewLine(1);
+            WriteText("                    Zum Programm Beenden:     (B)");
 
         }
     }

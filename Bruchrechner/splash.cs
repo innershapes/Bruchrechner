@@ -19,19 +19,19 @@ namespace Bruchrechner
         // Outputs the welcome massage and information about the programm
         static void Splash()
         {
-            SetPageBorder("-");
+            SetBorder("-");
             Console.SetCursorPosition(34, 1);
             WriteText("WILLKOMMEN");
-            SetPageBorder("-");
-            AddNewLine(2);
-            WriteText("   Programm Name:     Bruchrechner");
-            WriteText("Programm Version:     V1.0");
-            WriteText("         Autorin:     Apostolka Christov");
-            WriteText("    Erstelldatum:     26.08.2020");
-            WriteText("       Anwendung:     Zum Rechnen mit Brueche");
-            AddNewLine(2);
-            SetPageBorder("-");
-            AddNewLine(2);
+            SetBorder("-");
+            AddNewLine(1);
+            WriteText("                       Programm Name:     Bruchrechner");
+            WriteText("                             Version:     1.0");
+            WriteText("                             Autorin:     Apostolka Christov");
+            WriteText("                        Erstelldatum:     26.08.2020");
+            WriteText("                           Anwendung:     Zum Rechnen mit Brueche");
+            AddNewLine(1);
+            SetBorder("-");
+            AddNewLine(1);
         }
     }
 }

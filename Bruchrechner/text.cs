@@ -29,8 +29,8 @@ namespace Bruchrechner
             Console.WriteLine(text);
         }
 
-        // Set horizontal page border. It take an argument with the prefered sign
-        static void SetPageBorder(string sign)
+        // Set horizontal page border. It take a string argument with the prefered sign
+        static void SetBorder(string sign)
         {
             Console.WriteLine(String.Concat(Enumerable.Repeat(sign, 79)));
         }
