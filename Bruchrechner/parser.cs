@@ -3,8 +3,7 @@ Berufschule:    HHEK Bonn
 Authorin:		Apostolka Christov
 Klasse:			IA219
 Datum:			24.08.2020
-Datei:          Bruch.cs
-Beschreibung:   Im Module befindet sich das Struk des Bruchs
+Datei:          parser.cs
 *****************************************************************************/
 
 using System;
@@ -13,11 +12,11 @@ namespace Bruchrechner
 {
     partial class MainClass
     {
-        // Das Stukt des Beuchs
-        public struct Bruch
+        static int Parse(string bruchteil)
         {
-            int zaehler;
-            int nenner;
+            int pareser = Convert.ToInt32(bruchteil);
+            int ergebnis = pareser;
+            return ergebnis;
         }
     }
 }

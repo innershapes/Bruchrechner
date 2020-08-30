@@ -12,6 +12,9 @@ namespace Bruchrechner
 {
     partial class MainClass
     {
-
+        static void Substrahiere(int zeahler1, int nenner1, int zeahler2, int nenner2)
+        {
+            
+        }
     }
 }

@@ -15,15 +15,106 @@ namespace Bruchrechner
         //Die eigentliche Kalkulation finden in den run-Methode staat.
         static void Run()
         {
-            // Zeige den Willkommen und Info Screen
+            // Zeige den Willkommen/Info Screen
             Splash();
-            // Zeige die zur Verfüng stehenden Funktionen, und wie sie zu anwenden sind. 
-            Hauptmenue();
 
-            //
-            while (true) 
+            bool weiter = true;
+
+            //Haupschleife
+            while (weiter)
             {
+                // Zeige die zur Verfüng stehenden Funktionen, und wie sie zu anwenden sind.
                 string auswahl = Hauptmenue();
+                if (auswahl == "a")
+                {
+                    WriteText("Nun gebe bitte den Zaehler deins ersten Bruchs ein:");
+                    string zaeler1 = Console.ReadLine();
+                    Console.Clear();
+
+                    WriteText("Nun gebe bitte den Nenner deins ersten Bruchs ein:");
+                    string nenner1 = Console.ReadLine();
+                    Console.Clear();
+
+                    WriteText("Nun gebe bitte den Zaehler deins zweiten Bruchs ein:");
+                    string zaeler2 = Console.ReadLine();
+                    Console.Clear();
+
+                    WriteText("Nun gebe bitte den Nenner deins zweiten Bruchs ein:");
+                    string nenner2 = Console.ReadLine();
+                    Console.Clear();
+
+                    // Convert string to int
+                    int intZaeler1 = Parse(zaeler1);
+                    int intNenner1 = Parse(nenner1);
+                    int intZaeler2 = Parse(zaeler2);
+                    int intNenner2 = Parse(nenner2);
+                    Addiere(intZaeler1, intNenner1, intZaeler2, intNenner2);
+                }
+
+                else if (auswahl == "s")
+                {
+                    throw new ArgumentException("Not Implemented Function"); 
+                }
+
+                else if (auswahl == "m")
+                {
+                    WriteText("Nun gebe bitte den Zaehler deins ersten Bruchs ein:");
+                    string zaeler1 = Console.ReadLine();
+                    Console.Clear();
+
+                    WriteText("Nun gebe bitte den Nenner deins ersten Bruchs ein:");
+                    string nenner1 = Console.ReadLine();
+                    Console.Clear();
+
+                    WriteText("Nun gebe bitte den Zaehler deins zweiten Bruchs ein:");
+                    string zaeler2 = Console.ReadLine();
+                    Console.Clear();
+
+                    WriteText("Nun gebe bitte den Nenner deins zweiten Bruchs ein:");
+                    string nenner2 = Console.ReadLine();
+                    Console.Clear();
+
+                    // Convert string to int
+                    int intZaeler1 = Parse(zaeler1);
+                    int intNenner1 = Parse(nenner1);
+                    int intZaeler2 = Parse(zaeler2);
+                    int intNenner2 = Parse(nenner2);
+                    Multipliziere(intZaeler1, intNenner1, intZaeler2, intNenner2);
+                }
+
+                else if (auswahl == "d")
+                {
+                    throw new ArgumentException("Not Implemented Function");
+                }
+
+                else if (auswahl == "s")
+                {
+                    throw new ArgumentException("Not Implemented Function");
+                }
+
+                else if (auswahl == "b")
+                {
+                    Console.Clear();
+                    WriteText("Moechtest du wuerklich das Programm beenden? Drucke y/n:");
+                    string beende = Console.ReadLine();
+                    if (beende == "y")
+                    {
+                        WriteText("Drucke eine Taste um das Programm zu beenden!");
+                        weiter = false;
+                    }
+                    else
+                    {
+                        WriteText("Zurueck in Hauptmenue.....");
+                        Console.Clear();
+                    }
+
+                }
+                else
+                {
+                    WriteText(auswahl + " ist keine moegliche Auswahl. Eine Taste druecken zum Rueclkehren ins Hauptmenue....");
+                    Console.ReadLine();
+                    Console.Clear();
+                }
             }
         }
     }

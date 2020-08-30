@@ -3,7 +3,7 @@ Berufschule:    HHEK Bonn
 Authorin:		Apostolka Christov
 Klasse:			IA219
 Datum:			24.08.2020
-Datei:          menue.cs
+Datei:          hauptmenue.cs
 Beschreibung:   Im Module finden Sie die Methode
                 zum Anzeigen der Haupmenue
 *****************************************************************************/
@@ -14,8 +14,9 @@ namespace Bruchrechner
 {
     partial class MainClass
     {
-        // Zeigt die verfügbaren Funktionen zum Berechnung eines Bruchs und die Tastatur-Tasten zum Auswahl die Funktionen.
-        // Erfasst den User-Input und gibt es aus zu weiterer Bearbeitung in der run-Methode.
+        // Zeigt die verfügbaren Funktionen zum Berechnung eines Bruchs
+        // und die Tastatur-Tasten zum Auswahl die Funktionen.
+        // Erfasst den User-Input und gibt ihn aus zu weiterer Bearbeitung in der run-Methode.
         static string Hauptmenue()
         //TODO: Find out how to capture user-input that is a single character 
         {
