@@ -25,6 +25,9 @@ namespace Bruchrechner
             {
                 // Zeige die zur Verfüng stehenden Funktionen, und wie sie zu anwenden sind.
                 string auswahl = Hauptmenue();
+
+                //Prüfe den User-Input und führe zu der gewünschten Kalkulation.
+                //Addieren
                 if (auswahl == "a")
                 {
                     WriteText("Nun gebe bitte den Zaehler deins ersten Bruchs ein:");
@@ -50,7 +53,7 @@ namespace Bruchrechner
                     int intNenner2 = Parse(nenner2);
                     Addiere(intZaeler1, intNenner1, intZaeler2, intNenner2);
                 }
-
+                //Substrahieren
                 else if (auswahl == "s")
                 {
                     WriteText("Nun gebe bitte den Zaehler deins ersten Bruchs ein:");
@@ -76,7 +79,7 @@ namespace Bruchrechner
                     int intNenner2 = Parse(nenner2);
                     Substrahiere(intZaeler1, intNenner1, intZaeler2, intNenner2);
                 }
-
+                //Multiplizieren
                 else if (auswahl == "m")
                 {
                     WriteText("Nun gebe bitte den Zaehler deins ersten Bruchs ein:");
@@ -102,7 +105,7 @@ namespace Bruchrechner
                     int intNenner2 = Parse(nenner2);
                     Multipliziere(intZaeler1, intNenner1, intZaeler2, intNenner2);
                 }
-
+                //Dividieren
                 else if (auswahl == "d")
                 {
                     WriteText("Nun gebe bitte den Zaehler deins ersten Bruchs ein:");
@@ -128,7 +131,7 @@ namespace Bruchrechner
                     int intNenner2 = Parse(nenner2);
                     Dividiere(intZaeler1, intNenner1, intZaeler2, intNenner2);
                 }
-
+                //Beenden
                 else if (auswahl == "b")
                 {
                     Console.Clear();
@@ -146,6 +149,7 @@ namespace Bruchrechner
                     }
 
                 }
+                //Falschen Knopfdruck signalisieren.
                 else
                 {
                     WriteText(auswahl + " ist keine moegliche Auswahl. Eine Taste druecken zum Rueclkehren ins Hauptmenue....");

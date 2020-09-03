@@ -42,6 +42,7 @@
     <Compile Include="Kuerzen.cs" />
     <Compile Include="text.cs" />
     <Compile Include="parser.cs" />
+    <Compile Include="print.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
