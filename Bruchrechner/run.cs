@@ -53,7 +53,28 @@ namespace Bruchrechner
 
                 else if (auswahl == "s")
                 {
-                    throw new ArgumentException("Not Implemented Function"); 
+                    WriteText("Nun gebe bitte den Zaehler deins ersten Bruchs ein:");
+                    string zaeler1 = Console.ReadLine();
+                    Console.Clear();
+
+                    WriteText("Nun gebe bitte den Nenner deins ersten Bruchs ein:");
+                    string nenner1 = Console.ReadLine();
+                    Console.Clear();
+
+                    WriteText("Nun gebe bitte den Zaehler deins zweiten Bruchs ein:");
+                    string zaeler2 = Console.ReadLine();
+                    Console.Clear();
+
+                    WriteText("Nun gebe bitte den Nenner deins zweiten Bruchs ein:");
+                    string nenner2 = Console.ReadLine();
+                    Console.Clear();
+
+                    // Convert string to int
+                    int intZaeler1 = Parse(zaeler1);
+                    int intNenner1 = Parse(nenner1);
+                    int intZaeler2 = Parse(zaeler2);
+                    int intNenner2 = Parse(nenner2);
+                    Substrahiere(intZaeler1, intNenner1, intZaeler2, intNenner2);
                 }
 
                 else if (auswahl == "m")
@@ -84,12 +105,28 @@ namespace Bruchrechner
 
                 else if (auswahl == "d")
                 {
-                    throw new ArgumentException("Not Implemented Function");
-                }
+                    WriteText("Nun gebe bitte den Zaehler deins ersten Bruchs ein:");
+                    string zaeler1 = Console.ReadLine();
+                    Console.Clear();
 
-                else if (auswahl == "s")
-                {
-                    throw new ArgumentException("Not Implemented Function");
+                    WriteText("Nun gebe bitte den Nenner deins ersten Bruchs ein:");
+                    string nenner1 = Console.ReadLine();
+                    Console.Clear();
+
+                    WriteText("Nun gebe bitte den Zaehler deins zweiten Bruchs ein:");
+                    string zaeler2 = Console.ReadLine();
+                    Console.Clear();
+
+                    WriteText("Nun gebe bitte den Nenner deins zweiten Bruchs ein:");
+                    string nenner2 = Console.ReadLine();
+                    Console.Clear();
+
+                    // Convert string to int
+                    int intZaeler1 = Parse(zaeler1);
+                    int intNenner1 = Parse(nenner1);
+                    int intZaeler2 = Parse(zaeler2);
+                    int intNenner2 = Parse(nenner2);
+                    Dividiere(intZaeler1, intNenner1, intZaeler2, intNenner2);
                 }
 
                 else if (auswahl == "b")
@@ -104,7 +141,7 @@ namespace Bruchrechner
                     }
                     else
                     {
-                        WriteText("Zurueck in Hauptmenue.....");
+                        WriteText("Zurueck ins Hauptmenue.....");
                         Console.Clear();
                     }
 

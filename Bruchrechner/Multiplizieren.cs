@@ -20,9 +20,7 @@ namespace Bruchrechner
             string ergebnisZaelerString = Convert.ToString(ergebnisZaeler);
             string ergebnisNennerString = Convert.ToString(ergebnisNenner);
 
-            WriteText(ergebnisZaelerString);
-            WriteText("-----");
-            WriteText(ergebnisNennerString);
+            PrintOutput(ergebnisZaelerString, ergebnisNennerString);
         }
     }
 }

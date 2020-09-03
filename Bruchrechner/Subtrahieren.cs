@@ -14,7 +14,23 @@ namespace Bruchrechner
     {
         static void Substrahiere(int zeahler1, int nenner1, int zeahler2, int nenner2)
         {
-            
+
+            int ergebnisZaeler = (zeahler1 * nenner2) - (zeahler2 * nenner1);
+            int ergebnisNenner;
+            if (nenner1 == nenner2)
+            {
+                ergebnisNenner = nenner1;
+            }
+
+            else
+            {
+                ergebnisNenner = nenner1 * nenner2;
+            }
+
+            string ergebnisZaelerString = Convert.ToString(ergebnisZaeler);
+            string ergebnisNennerString = Convert.ToString(ergebnisNenner);
+
+            PrintOutput(ergebnisZaelerString, ergebnisNennerString);
         }
     }
 }

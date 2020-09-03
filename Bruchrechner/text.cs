@@ -34,5 +34,12 @@ namespace Bruchrechner
         {
             Console.WriteLine(String.Concat(Enumerable.Repeat(sign, 79)));
         }
+
+        static void PrintOutput(string ergebnisZ, string ergebnisN)
+        {
+            WriteText(ergebnisZ);
+            WriteText("----");
+            WriteText(ergebnisN);
+        }
     }   
 }

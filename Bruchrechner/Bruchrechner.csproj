@@ -38,7 +38,6 @@
     <Compile Include="Multiplizieren.cs" />
     <Compile Include="splash.cs" />
     <Compile Include="menue.cs" />
-    <Compile Include="Exception.cs" />
     <Compile Include="run.cs" />
     <Compile Include="Kuerzen.cs" />
     <Compile Include="text.cs" />
