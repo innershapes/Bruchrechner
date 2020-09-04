@@ -77,7 +77,7 @@ namespace Bruchrechner
                     int intNenner1 = Parse(nenner1);
                     int intZaeler2 = Parse(zaeler2);
                     int intNenner2 = Parse(nenner2);
-                    Substrahiere(intZaeler1, intNenner1, intZaeler2, intNenner2);
+                    Subtrahiere(intZaeler1, intNenner1, intZaeler2, intNenner2);
                 }
                 //Multiplizieren
                 else if (auswahl == "m")

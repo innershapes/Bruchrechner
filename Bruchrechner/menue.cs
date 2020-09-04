@@ -23,7 +23,7 @@ namespace Bruchrechner
             Console.SetCursorPosition(34, 11);
             WriteText("Hauptmenue");
             AddNewLine(1);
-            WriteText("        Zum Kalkulieren eines Bruchs waehle von der folgenden Funktionen aus:");
+            WriteText(" Zum Kalkulieren eines Bruchs waehle bitte einer der folgenden Funktionen aus:");
             AddNewLine(1);
             WriteText("                        Zum Addieren [+] drucke Taste (a)");
             WriteText("                   Zum Substrahieren [-] drucke Taste (s)");

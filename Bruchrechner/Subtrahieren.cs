@@ -4,6 +4,7 @@ Authorin:		Apostolka Christov
 Klasse:			IA219
 Datum:			24.08.2020
 Datei:          Substahieren.cs
+Beschreibung:   Die Datei enhält die Funktion zum Subtrahieren zwie Brüche.
 *****************************************************************************/
 
 using System;
@@ -12,27 +13,24 @@ namespace Bruchrechner
 {
     partial class MainClass
     {
-        static void Substrahiere(int zeahler1, int nenner1, int zeahler2, int nenner2)
+        static void Subtrahiere(int zeahler1, int nenner1, int zeahler2, int nenner2)
         {
             //Ergebnisvariablen
-            int ergebnisZaeler = (zeahler1 * nenner2) - (zeahler2 * nenner1);
+            int ergebnisZaehler;
             int ergebnisNenner;
             //Prüfe, ob Zaehler und Nenner glecih sind. Wenn nicht, multipliziere sie.
             if (nenner1 == nenner2)
             {
+                ergebnisZaehler = zeahler1 - zeahler2;
                 ergebnisNenner = nenner1;
             }
 
             else
             {
+                ergebnisZaehler = (zeahler1 * nenner2) - (zeahler2 * nenner1);
                 ergebnisNenner = nenner1 * nenner2;
             }
-            //Konvertiere den Ganzzahl zu String.
-            string ergebnisZaelerString = Convert.ToString(ergebnisZaeler);
-            string ergebnisNennerString = Convert.ToString(ergebnisNenner);
-
-            //Gebe den Ergebnis in der Console aus.
-            PrintErgebnis(ergebnisZaelerString, ergebnisNennerString);
+            Kuerzen(ergebnisZaehler, ergebnisNenner);
         }
     }
 }

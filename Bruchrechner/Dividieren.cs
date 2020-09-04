@@ -19,7 +19,7 @@ namespace Bruchrechner
         {
 
             //Ergebnisvariablen.
-            int ergebnisZaeler;
+            int ergebnisZaehler;
             int ergebnisNenner;
 
             //Prüfe, ob die Nenner auf Null gesetzt sind und zeige welches Bruch das ist.
@@ -28,31 +28,27 @@ namespace Bruchrechner
             {
                 WriteText("Nullteilung nicht erlaubt!");
                 WriteText("Kalkulation wird beendet! Zurück ins Hauptmenue...");
+                Console.Clear();
 
                 if (nenner1 == 0)
                 {
-                    ergebnisZaeler = zeahler1;
+                    ergebnisZaehler = zeahler1;
                     ergebnisNenner = nenner1;
                 }
                 else
                 {
-                    ergebnisZaeler = zeahler2;
+                    ergebnisZaehler = zeahler2;
                     ergebnisNenner = nenner2;
                 }
             }
 
             else
             {
-                ergebnisZaeler = (zeahler1 * nenner2) / (zeahler2 * nenner1);
-                ergebnisNenner = nenner1 * nenner2;
+                ergebnisZaehler = (zeahler1 * nenner2);
+                ergebnisNenner = (nenner1 * zeahler2);
             }
 
-            // Konvertiere den Ganzzahl zu String.
-            string ergebnisZaelerString = Convert.ToString(ergebnisZaeler);
-            string ergebnisNennerString = Convert.ToString(ergebnisNenner);
-
-            //Gebe den Ergebnis in der Console aus.
-            PrintErgebnis(ergebnisZaelerString, ergebnisNennerString);
+            Kuerzen(ergebnisZaehler, ergebnisNenner);
         }
     }
 }
